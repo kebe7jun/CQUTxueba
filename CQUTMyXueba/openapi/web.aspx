@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="web.aspx.cs" Inherits="CQUTMyXueba.openapi.web" %>

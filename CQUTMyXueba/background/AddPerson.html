@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>人员管理-信息添加</title>
+    <link rel="stylesheet" href="css/addperson.css" />
+    <script src="js/jquery.js" type="text/javascript"></script>
+</head>
+<body>
+
+    <table>
+        <tr><td class="title">候选人姓名</td><td class="val"><input type="text" name="name" id="name" placeholder="姓名" /></td></tr>
+        <tr><td class="title">候选人介绍（最多500字）</td><td class="val"><textarea name="intro" id="intro" placeholder="简介" maxlength="1000"></textarea></td></tr>
+        <tr><td class="title">候选人类型</td><td class="val"><input type="number" name="type" id="type" placeholder="候选人类型" value="1" />1-正式候选人，2-未来候选人</td></tr>
+        <tr><td class="title">候选人曾获奖项（最多300字）</td><td class="val"><textarea name="awards" id="awards" maxlength="500" placeholder="奖项"></textarea></td></tr>
+        <tr><td class="title">展示内容标题(最多50字)</td><td class="val"><textarea name="title" id="title" placeholder="标题" maxlength="50"></textarea></td></tr>
+        <tr><td class="title">候选人心得内容（不多于1000字）</td><td class="val"><textarea name="des" id="des" maxlength="5000" placeholder="描述"></textarea></td></tr>
+        <tr><td class="title"><button id="addperson" type="submit">添加</button></td></tr>
+    </table>
+
+    <script>
+        $(document).ready(function () {
+            function trimData(data) {
+                return data.replace(" ", "").replace("*", " ").trim();
+            }
+
+            function validateForm() {
+                var name = trimData($("#name").val());
+                var intro = trimData($("#intro").val());
+                var type = trimData($("#type").val());
+                var awards = trimData($("#awards").val());
+                var title = trimData($("#title").val());
+                var des = trimData($("#des").val());
+
+                if (name.length >= 2 && (type == "1" || type == "2")) {
+                    return true;
+                }
+                return false;
+            }
+
+            function getData() {
+                var name = $("#name").val();
+                var intro = $("#intro").val();
+                var type = $("#type").val();
+                var awards = $("#awards").val();
+                var title = $("#title").val();
+                var des = $("#des").val();
+
+                var data = "name="+name+"&intro="+intro+"&type="+type+"&awards="+awards+"&title="+title+"&des="+des;
+                return data;
+            }
+
+            $("#addperson").click(function () {
+                if (validateForm()) {
+                    $.ajax({
+                        type: "post",                         url: "/openapi/web.aspx?action=addperson",                         data: getData(),                         success: function (data) {
+                            var result = eval("(" + data + ")");                             switch (result.msg) {
+                                case "success": alert("已成功添加对应学生信息"); break;
+                                case "failed": alert("添加出现错误，请检查服务器数据库是否正确"); break;
+                                case "error-nopermission": alert("权限错误，你没有权限访问"); location.href = "/default.aspx"; break;
+                                default: alert("获取的结果出现错误"); break;
+                            }
+                        },                         error: function (XMLHttpRequest, textStatus, errorThrown) {
+                            alert(errorThrown);
+                        }
+                    });
+                } else {
+                    alert("表单内容信息有误！");
+                }
+            });
+
+        })
+    </script>
+    <form action="openapi/web.aspx?action=addperson" method="post" enctype="multipart/form-data"></form>
+</body>
+</html>

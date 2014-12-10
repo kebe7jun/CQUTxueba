@@ -1,0 +1,40 @@
+﻿body {
+    position: relative;
+    margin: 40px auto;
+    background:#fff;
+    padding-left:15px;
+    padding-right:15px; 
+    scrollBar-face-color:green; 
+}
+#stuinfo_body{
+    width:610px;
+    margin:auto;
+}
+.stuinfo_title{
+    position:relative;
+    width:100%;
+    margin-top:10px;
+    height:40px;
+    text-align:center;
+    font-size:30px;
+    font-weight:900;
+}
+#stuinfo_img{
+    width:280px;
+    height:420px;
+    float:left;
+}
+#stuinfo_jianjie{
+    margin-top:15px;
+    width:310px;
+    height:370px;
+    padding:10px;
+    float:right;
+    font-size:16px;
+    overflow:hidden;
+}
+#stuinfo_details{
+    clear:both;
+    width:100%;
+    font-size:15px;
+}

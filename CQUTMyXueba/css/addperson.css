@@ -1,0 +1,43 @@
+﻿body {font-family:'Microsoft YaHei'
+         ;
+}
+
+
+form {
+    margin:auto;
+}
+
+.title {
+    text-align:right;
+    background-color:#808080;
+    color:white;
+}
+
+.val {
+    background-color:#808080;
+}
+
+table {
+    margin:auto;
+}
+
+    table textarea {
+        min-width:500px;
+        min-height:120px;
+        max-height:120px;
+        max-width:500px;
+    }
+
+    table button {
+        width:100px;
+        height:36px;
+        color:white;
+        background-color:#0094ff;
+        border-radius:6px;
+        border:0;
+    }
+
+        table button:hover {
+            transition:ease-in-out 150ms;
+            background-color:#00ffff;
+        }

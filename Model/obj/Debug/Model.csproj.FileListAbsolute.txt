@@ -1,0 +1,16 @@
+E:\Visual Studio\Projects\CQUTMyXueba\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+E:\Visual Studio\Projects\CQUTMyXueba\Model\bin\Debug\Model.dll
+E:\Visual Studio\Projects\CQUTMyXueba\Model\bin\Debug\Model.pdb
+E:\Visual Studio\Projects\CQUTMyXueba\Model\bin\Debug\LibControl.dll
+E:\Visual Studio\Projects\CQUTMyXueba\Model\bin\Debug\System.Data.SQLite.dll
+E:\Visual Studio\Projects\CQUTMyXueba\Model\bin\Debug\LibControl.pdb
+E:\Visual Studio\Projects\CQUTMyXueba\Model\obj\Debug\Model.dll
+E:\Visual Studio\Projects\CQUTMyXueba\Model\obj\Debug\Model.pdb
+F:\www\CQUTMyXueba\Model\bin\Debug\Model.dll
+F:\www\CQUTMyXueba\Model\bin\Debug\Model.pdb
+F:\www\CQUTMyXueba\Model\bin\Debug\LibControl.dll
+F:\www\CQUTMyXueba\Model\bin\Debug\System.Data.SQLite.dll
+F:\www\CQUTMyXueba\Model\bin\Debug\LibControl.pdb
+F:\www\CQUTMyXueba\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+F:\www\CQUTMyXueba\Model\obj\Debug\Model.dll
+F:\www\CQUTMyXueba\Model\obj\Debug\Model.pdb

@@ -1,0 +1,43 @@
+﻿#copy {
+    height:90px;
+    background-color: #fff;     
+    padding-top: 10px;
+    position: relative;
+}
+
+    #copy p {
+        width: 100%;
+        text-align: center;
+        font-family: 'Microsoft YaHei';
+        font-weight: bold;
+    }
+
+        #copy p a {
+            font-family: 'Microsoft YaHei';
+            font-weight: bold;
+            text-decoration: none;
+            color: #000;
+        }
+
+            #copy p a:hover {
+                font-family: 'Microsoft YaHei';
+                font-weight: bold;
+                text-decoration: none;
+                color: #fff;
+            }
+
+    #copy h1 {
+        font-size: 13px;
+        position: relative;
+        margin: 0px auto;
+        width: 200px;
+        text-align: center;
+        font-family: 'Microsoft YaHei';
+        font-weight: bold;
+    }
+
+    #copy .logo {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }

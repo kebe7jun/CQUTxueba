@@ -1,0 +1,208 @@
+﻿#headers {
+    width: 100%;
+    height:500px;
+    z-index: 500;
+    background-image: url("../img/background.png");
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    margin:auto;
+    overflow:hidden;
+}
+
+#headers #itemname {
+    width:1100px;
+    height:500px;
+    margin:auto;
+    position:relative;
+    background-image:url(../img/main.png);
+    background-size:100% 100%;
+    
+}
+    /*#headers #headlogo {
+        position:absolute;
+        left:0px;
+        background-image: url("../img/headlogo1.png");   
+        width:277px;
+        height:310px;
+        top:70px;
+        left:50px;
+        background-repeat:no-repeat;
+        z-index:750;    
+    }*/
+    #headers #headlogo {
+        position:absolute;
+        left:0px;     
+        width:282px;
+        height:240px;
+        top:35px;
+        left:92px;
+        background-repeat:no-repeat;
+        z-index:750;    
+    }
+#headers #PEOPLES {
+    width: 539px;
+    height: 400px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 800;
+    background-image: url("../img/peoples.png");
+    background-repeat: no-repeat;
+}
+
+#headers #bg2 {
+    width: 415px;
+    height: 341px;
+    position: absolute;
+    top: 30px;
+    background-image: url("../img/bg2.png");
+    /*top:80px;
+    background-image: url("../img/headlogo.png");*/
+    right: 0%;
+    
+    background-repeat: no-repeat;
+    z-index: 800;
+}
+
+#headers #sets {
+    width: 83px;
+    height: 104px;
+    background-image: url("../img/gz.png");
+    position: absolute;
+    left: 3%;
+    top: -14px;
+    z-index: 900;
+    cursor: pointer;
+}
+
+/*****/
+#bg4 {
+        background-image: url("../img/bg4.png");
+        background-repeat: no-repeat; 
+        width:332px;
+        height:276px;
+        position:absolute;
+        z-index:950;
+        top:420px;
+        left:-40px;  
+}
+/****/
+#MSG {
+    width: 1200px;
+    height: 500px;
+    z-index: 960;
+    position: fixed;
+    display:none;
+    left: 50%;
+    margin-left: -600px;
+    top: 10px;
+}
+
+    #MSG #MSGlogo {
+        width: 351px;
+        height: 281px;
+        background-image: url("../img/bg3.png");
+        background-repeat: no-repeat;
+        z-index: 970;
+        position: absolute;
+        right: -30px;
+        top: 0px;
+    }
+        #MSG #MSGlogo:hover {
+            opacity: 0.5;
+            -moz-opacity: 0.5;
+            filter: alpha(opacity = 50);
+        }
+
+    #MSG #INMSG {
+        width: 900px;
+        height: 500px;
+        border: #808080 solid 2px;
+        position: relative;
+        margin: 0px auto;
+        top: 100px;
+        background-color: #fff;
+        padding-left:10px;
+        
+        
+    }
+    #MSG #INMSG_in {
+        position:absolute;
+        width: 900px;
+        height: 450px;
+        
+    }
+    #MSG td {
+        width: 300px;
+        height: 450px;
+        
+        
+        
+    }
+
+    #MSG .titleName {
+        font-size: 20px;
+        color: #383838;
+        font-weight: bold;
+        font-family: 'Microsoft YaHei';
+    }
+
+    #MSG li {
+        list-style: none;
+        border-bottom:#a7a2a2 dotted 1px;
+        padding-bottom:1px;
+        margin-top:4px;
+        width:230px;
+        height:20px;
+        position:relative;
+    }
+
+        #MSG li .num {
+            display: block;
+            width: 15px;
+            height: 15px;
+            background-color: #df0000;
+            text-align: center;
+            line-height: 15px;
+            font-size: 13px;
+            font-weight: bold;
+            color: #ffffff;
+            font-family:'Microsoft YaHei';
+            float: left;
+            margin-top:2px;
+           
+
+        }
+        #MSG li .num1 {
+            display: block;
+            width: 15px;
+            height: 15px;
+            background-color: #808080;
+            text-align: center;
+            line-height: 15px;
+            font-size: 13px;
+            font-weight: bold;
+            color: #ffffff;
+            font-family:'Microsoft YaHei';
+            float: left;
+            margin-top:2px;
+
+        }
+        #MSG li .name {
+            font-size: 13px;
+            color:#808080;
+            padding-left:60px;
+            font-family:'Microsoft YaHei';
+            float: left;
+            width:100px;
+         
+        }
+        #MSG li .piao {
+            font-size:13px;
+            font-family:'Microsoft YaHei';
+            width:200px;
+            text-align:right;
+            position:absolute;
+            right:0px;
+           
+        }

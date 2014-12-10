@@ -1,0 +1,22 @@
+﻿body {
+
+}
+
+table{
+    margin:auto;
+}
+
+.info {
+    text-align:right;
+}
+
+.val {
+    text-align:left;
+    width:120px;
+    height:25px;
+}
+
+
+    .val input {
+        width:100%;
+    }
